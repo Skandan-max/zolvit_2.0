@@ -1,0 +1,17 @@
+{
+  "name": "zolvit_2.0",
+  "version": "1.0.0",
+  "description": "testing nodemailer",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "skandan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "nodemailer": "^6.9.5"
+  }
+}
