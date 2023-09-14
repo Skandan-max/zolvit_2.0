@@ -3,8 +3,8 @@ const bodyParser = require("body-parser")
 const { engine } = require("express-handlebars")
 const nodemailer = require("nodemailer")
 const path = require("path")
-const bodyParser = require("body-parser")
 const { error } = require("console")
+require("dotenv").config()
 
 const app = express()
 
@@ -33,7 +33,7 @@ app.post("/send", (req, res) => {
 		secure: false,
 		auth: {
 			user: "skandan2003@gmail.com",
-			pass: "qpzfqnpeispekwzh",
+			pass: process.env.PASS,
 		},
 		tls: {
 			rejectUnauthorized: false,
